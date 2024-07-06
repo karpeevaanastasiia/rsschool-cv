@@ -98,19 +98,45 @@
                     <div class="title-color">
                         <h2 class="title">About me</h2>
                     </div>
-                    <p>fgnjkgnknfgjnb</p>
+                    <p class="summary-text">Hello! I am a beginner Front-end developer. I am just starting my journey in the IT sphere, but the main thing is that I do it with incredible curiosity. I am a responsible, goal-oriented worker, I always strive to get to the truth and have a great desire to learn and develop in the IT sphere.</p>
                 </section>
                 <!-- Навыки -->
                 <section class="skills" id="skills">
                     <div class="title-color">
                         <h2 class="title">Skills</h2>
                     </div>
-                    <p>fgnjkgnknfgjnb</p>
+                    <ul class="skills-list">
+                        <li>HTML5</li>
+                        <li>CSS/SASS</li>
+                        <li>Git</li>
+                        <li>JS basic</li>
+                    </ul>
                 </section>
                 <section class="code" id="code">
                     <div class="title-color">
-                        <h2 class="title">Code</h2>
+                        <h2 class="title">Code example</h2>
                     </div>
+                    <pre>
+                        <code data-language="javascript" class="code-example">
+                            window.addEventListener('DOMContentLoaded', () => {
+                                const menu = document.querySelector('.nav-menu'),
+                                menuItem = document.querySelectorAll('.nav-menu__list-item'),
+                                hamburger = document.querySelector('.hamburger');
+                            
+                                hamburger.addEventListener('click', () => {
+                                    hamburger.classList.toggle('hamburger_active');
+                                    menu.classList.toggle('nav-menu_active');
+                                });
+                            
+                                menuItem.forEach(item => {
+                                    item.addEventListener('click', () => {
+                                        hamburger.classList.toggle('hamburger_active');
+                                        menu.classList.toggle('nav-menu_active');
+                                    })
+                                })
+                            })
+                        </code>
+                    </pre>
                 </section>
                 <section class="projects" id="projects">
                     <div class="title-color">
@@ -121,7 +147,10 @@
         </div>
     </main>
     <footer>
-        <div class="container"></div>
+        <div class="container">
+            <a href="https://rs.school/courses/javascript-ru">RS-school</a>
+            <p class="footer-text">2024</p>
+        </div>
     </footer>
 </body>
 </html>

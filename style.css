@@ -142,3 +142,30 @@ span {
 .english {
     border: 1px solid #000;
 }
+
+.summary-text {
+    line-height: 2;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 18px;
+}
+
+.skills-list {
+    margin: 20px 20px;
+    font-size: 18px;
+}
+
+.code-example {
+    font-size: 14px;
+    line-height: 2;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000;
+}
+
+.footer-text {
+    color: white;
+}
