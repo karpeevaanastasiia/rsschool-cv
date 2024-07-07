@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="left-side"></div>
+           <!--  Навигационное меню -->
+            <nav class="nav right-side">
+                <ul class="nav-list">
+                    <li class="list-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="list-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="list-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="list-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="list-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="list-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="list-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Левая сторона -->
+            <div class="left-side">
+                <section class="photo">
+                    <div class="first-title">
+                        <hr class="title-line">
+                        <h1 class="main-title">Karpeeva Anastasia</h1>
+                    </div>
+                    <img class="photo-img" src="assets/img/Avatar.jpg" alt="Avatar">
+                </section>
+               <!--  Контакты -->
+                <section class="contacts" id="contacts">
+                    <h2>Contacts</h2>
+                    <ul class="contacts-list">
+                       <!--  Локация -->
+                        <li class="contacts-item">
+                            <div class="contacts-block">
+                                <img class="contacts-img" src="assets/img/location.svg" alt="location-icon">
+                                <p>Georgia, Batumi</p>
+                            </div>
+                        </li>
+                        <!-- Почта -->
+                        <li class="contacts-item">
+                            <div class="contacts-block">
+                                <img class="contacts-img" src="assets/img/mail.svg" alt="mail-icon">
+                                <a class="contacts-link" href="mailto:ankarpeeva10@gmail.com">ankarpeeva10@gmail.com</a>
+                            </div>
+                        </li>
+                       <!--  Telegram -->
+                        <li class="contacts-item">
+                            <div class="contacts-block">
+                                <img class="contacts-img" src="assets/img/telegram.svg" alt="telegram-icon">
+                                <a class="contacts-link" href="https://t.me/ankarpeeva">ankarpeeva</a>
+                            </div>
+                        </li>
+                        <li class="contacts-item">
+                            <div class="contacts-block">
+                                <img class="contacts-img" src="assets/img/discord.svg" alt="discord-icon">
+                                <a class="contacts-link" href="https://discordapp.com/users/anastasiakarpeeva_27556 / ">Anastasia Karpeeva</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <!-- Образование -->
+                <section class="education" id="education">
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <h3>University</h3>
+                        <li> <span>2018-2022</span>    <br> Russian        University of Culture</li>
+                    <h3>Courses</h3>
+                        <li> <span>2023-2024</span>     <br> Course "Layout and creation of websites" </li>
+                        <li> <span>2024</span> <br>  
+                            Intensive "Front-end Start" 
+                        </li>                        
+                    </ul>
+                </section>
+                <section class="english" id="english">
+                    <h2>Foreign Languages</h2>
+                    <ul>
+                        <li>English A2 (I have English classes)</li>
+                    </ul>
+                </section>
+            </div>
+            <!--  Правая сторона -->
+            <div class="right-side">
+                <figure class="figure">
+                    <p class="figure-text">Front-end developer</p>
+                </figure>
+               <!--  Обо мне -->
+                <section class="summary" id="summary">
+                    <div class="title-color">
+                        <h2 class="title">About me</h2>
+                    </div>
+                    <p class="summary-text">Hello! I am a beginner Front-end developer. I am just starting my journey in the IT sphere, but the main thing is that I do it with incredible curiosity. I am a responsible, goal-oriented worker, I always strive to get to the truth and have a great desire to learn and develop in the IT sphere.</p>
+                </section>
+                <!-- Навыки -->
+                <section class="skills" id="skills">
+                    <div class="title-color">
+                        <h2 class="title">Skills</h2>
+                    </div>
+                    <ul class="skills-list">
+                        <li>HTML5</li>
+                        <li>CSS/SASS</li>
+                        <li>Git</li>
+                        <li>JS basic</li>
+                    </ul>
+                </section>
+                <section class="code" id="code">
+                    <div class="title-color">
+                        <h2 class="title">Code example</h2>
+                    </div>
+                    <pre class="code-example">
+                        <code data-language="javascript">
+                            window.addEventListener('DOMContentLoaded', () => {
+                                const menu = document.querySelector('.nav-menu'),
+                                menuItem = document.querySelectorAll('.nav-menu__list-item'),
+                                hamburger = document.querySelector('.hamburger');
+                            
+                                hamburger.addEventListener('click', () => {
+                                    hamburger.classList.toggle('hamburger_active');
+                                    menu.classList.toggle('nav-menu_active');
+                                });
+                            
+                                menuItem.forEach(item => {
+                                    item.addEventListener('click', () => {
+                                        hamburger.classList.toggle('hamburger_active');
+                                        menu.classList.toggle('nav-menu_active');
+                                    })
+                                })
+                            })
+                        </code>
+                    </pre>
+                </section>
+                <section class="projects" id="projects">
+                    <div class="title-color">
+                        <h2 class="title">Projects</h2>
+                    </div>
+                    <ul class="projects-list">
+                        <li>
+                            <a class="projects-link" href="https://github.com/karpeevaanastasiia/Bakery">Bakery</a>
+                        </li>
+                        <li>
+                            <a class="projects-link" href="https://github.com/karpeevaanastasiia/burgers">Burgers</a>
+                        </li>
+                        <li>
+                            <a class="projects-link" href="https://github.com/karpeevaanastasiia/Guitarist-s-portfolio">Guitarist's portfolio</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <div class="link-block">
+                <div class="logo">
+                    <img src="assets/img/github.svg" alt="github-icon">
+                </div>
+                <a class="footer-link" href="http://github.com/karpeevaanastasiia">My GitHub</a>
+            </div>
+            <p class="footer-text">2024</p>
+            <div class="link-block">
+                <div class="logo">
+                    <img src="assets/img/rsschool-logo.svg" alt="rsschool-logo">
+                </div>
+                <a  class="footer-link" href="https://rs.school/courses/javascript-ru">RS-school</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
