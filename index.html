@@ -13,13 +13,13 @@
            <!--  Навигационное меню -->
             <nav class="nav right-side">
                 <ul class="nav-list">
-                    <li class="list-item"><a href="#" class="nav-link"></a>Contacts</li>
-                    <li class="list-item"><a href="#" class="nav-link"></a>Summary</li>
-                    <li class="list-item"><a href="#" class="nav-link"></a>Skills</li>
-                    <li class="list-item"><a href="#" class="nav-link"></a>Code </li>
-                    <li class="list-item"><a href="#" class="nav-link"></a>Projects</li>
-                    <li class="list-item"><a href="#" class="nav-link"></a>Education</li>
-                    <li class="list-item"><a href="#" class="nav-link"></a>English</li>
+                    <li class="list-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="list-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="list-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="list-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="list-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="list-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="list-item"><a href="#english" class="nav-link">English</a></li>
                 </ul>
             </nav>
         </div>
@@ -116,8 +116,8 @@
                     <div class="title-color">
                         <h2 class="title">Code example</h2>
                     </div>
-                    <pre>
-                        <code data-language="javascript" class="code-example">
+                    <pre class="code-example">
+                        <code data-language="javascript">
                             window.addEventListener('DOMContentLoaded', () => {
                                 const menu = document.querySelector('.nav-menu'),
                                 menuItem = document.querySelectorAll('.nav-menu__list-item'),
@@ -142,14 +142,36 @@
                     <div class="title-color">
                         <h2 class="title">Projects</h2>
                     </div>
+                    <ul class="projects-list">
+                        <li>
+                            <a class="projects-link" href="https://github.com/karpeevaanastasiia/Bakery">Bakery</a>
+                        </li>
+                        <li>
+                            <a class="projects-link" href="https://github.com/karpeevaanastasiia/burgers">Burgers</a>
+                        </li>
+                        <li>
+                            <a class="projects-link" href="https://github.com/karpeevaanastasiia/Guitarist-s-portfolio">Guitarist's portfolio</a>
+                        </li>
+                    </ul>
                 </section>
             </div>
         </div>
     </main>
     <footer>
-        <div class="container">
-            <a href="https://rs.school/courses/javascript-ru">RS-school</a>
+        <div class="container footer-container">
+            <div class="link-block">
+                <div class="logo">
+                    <img src="assets/img/github.svg" alt="github-icon">
+                </div>
+                <a class="footer-link" href="http://github.com/karpeevaanastasiia">My GitHub</a>
+            </div>
             <p class="footer-text">2024</p>
+            <div class="link-block">
+                <div class="logo">
+                    <img src="assets/img/rsschool-logo.svg" alt="rsschool-logo">
+                </div>
+                <a  class="footer-link" href="https://rs.school/courses/javascript-ru">RS-school</a>
+            </div>
         </div>
     </footer>
 </body>

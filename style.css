@@ -14,6 +14,10 @@
     font-weight: bold;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     display: flex;
     flex-direction: column;
@@ -37,26 +41,28 @@ body {
 .left-side {
     width: 30%;
 }
+
+.nav {
+    border-left: 1px solid #000;
+}
  
 .nav-list {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    border-left: 2px solid #000;
 }  
 
-.list-item {
+.nav-link {
+    text-decoration: none;
+    color: #000;
     font-size: 18px;
     font-weight: bold;
-}
-
-.nav-link {
     transition: 0.3s;
 }
 
 .photo {
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .photo-img {
@@ -79,17 +85,18 @@ body {
 }
 
 .main-title {
-    font-size: 36px
+    margin: 30px;
+    font-size: 36px;
 }
 
 .figure {
-    margin: 100px 50px;
+    margin: 146.5px 50px;
     display: flex;
     align-items: center;
 }
 
 .figure-text {
-    font-size: 34px;
+    font-size: 42px;
 }
 
 .title-color {
@@ -103,7 +110,7 @@ h2 {
 
 .contacts {
     border: 1px solid #000;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .contacts-list {
@@ -115,7 +122,7 @@ h2 {
     align-items: center;
 }
 
-.contacts-img {
+img {
     width: 50px;
     height: 50px;
 }
@@ -128,7 +135,7 @@ h2 {
 
 .education {
     border: 1px solid #000; 
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 
 .education-list {
@@ -147,25 +154,56 @@ span {
     line-height: 2;
     text-align: center;
     margin: 20px 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .skills-list {
     margin: 20px 20px;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .code-example {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
-    margin: 20px 20px;
-    text-align: center;
+    margin: 0;
 }
 
-footer {
-    background-color: #000;
+.projects-list {
+    font-size: 20px;
+    line-height: 1.5;
 }
+
+.projects-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-container {
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 .footer-text {
     color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.link-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    background: white;
+    width: 50px;
+    height: 50px;
 }
