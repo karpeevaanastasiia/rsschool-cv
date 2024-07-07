@@ -6,7 +6,7 @@
 4. **GitHub:** [ankarpeeva](https://github.com/karpeevaanastasiia)
 ## About me
 I am a responsible, purposeful worker, I always strive to reach the truth. 
-I have a strong desire to learn and grow in the IT field.
+I have a strong desire to learn and grow in the IT field
 ## Skills
 - HTML
 - CSS/SASS
