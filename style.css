@@ -179,10 +179,14 @@ span {
     color: #000;
 }
 
+.projects-link:hover {
+    color: blueviolet;
+}
+
 .footer-container {
     background: #000;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
 
 }
 
@@ -196,6 +200,10 @@ span {
     color: white;
 }
 
+.footer-link:hover {
+    color: blueviolet;
+}
+
 .link-block {
     display: flex;
     flex-direction: row;
@@ -206,4 +214,5 @@ span {
     background: white;
     width: 50px;
     height: 50px;
+    border: #000 solid;
 }
